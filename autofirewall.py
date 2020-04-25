@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # AutoFirewall Layer4/Layer3 Protec/Shld.
-# Coded by Ertugrul TURAN / T13R
+# Coded by Ertugrul TURAN / T13R / V4
 # NinjaNetwork - www.Obir.Ninja
 import os
 import time
