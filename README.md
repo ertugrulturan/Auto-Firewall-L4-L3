@@ -8,3 +8,8 @@ Run/Install,
 > chmod +x autofirewall.py
 
 > python autofirewall.py
+
+```
+sudo chkconfig iptables on
+sudo service iptables save
+```
