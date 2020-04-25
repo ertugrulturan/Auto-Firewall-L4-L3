@@ -5,6 +5,8 @@
 import os
 import time
 timer = time.sleep
+if not os.geteuid() == 0:
+sys.exit("\nOnly root can run this script\n")
 os.system("clear")
 timer(0.25)
 os.system("curl -O http://www.inetbase.com/scripts/ddos/install.sh || wget http://www.inetbase.com/scripts/ddos/install.sh")
