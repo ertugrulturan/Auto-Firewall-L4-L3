@@ -9,7 +9,7 @@ Run/Install,
 
 > python autofirewall.py
 
+Iptables Port Connection Limit,
 ```
-sudo chkconfig iptables on
-sudo service iptables save
+iptables -A INPUT -p tcp -m tcp --dport [PORT] --tcp-flags FIN,SYN,RST,ACK SYN -m connlimit --connlimit-above [cNumber] --connlimit-mask 32 -j REJECT --reject-with tcp-reset
 ```
